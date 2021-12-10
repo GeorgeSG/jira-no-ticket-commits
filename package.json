@@ -1,0 +1,18 @@
+{
+  "name": "no-ticket-commits-jira",
+  "version": "1.0.0",
+  "description": "Create JIRA tickets from NO TICKET commits",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js --minify",
+    "watch": "ncc build index.js --watch --minify"
+  },
+  "author": "Leanplum",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
+  }
+}

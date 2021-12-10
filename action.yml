@@ -1,0 +1,27 @@
+name: Create JIRA issues from NO_TICKET commits
+description: Parses NO_TICKET commits and creates new JIRA issues
+branding:
+  icon: 'check-square'
+  color: 'blue'
+inputs:
+  apiUrl:
+    description: "Atlassian API URL"
+    required: true
+  apiEmail:
+    description: "Atlassian API Email"
+    required: true
+  apiToken:
+    description: "Atlassian API Token"
+    required: true
+  issueType:
+    description: "Type of the issue to be created. Example: 'Incident'"
+    required: true
+  commitSha:
+    description: SHA of the commit
+    required: true
+  commitMessage:
+    description: Message of the commit
+    required: true
+runs:
+  using: 'node12'
+  main: './dist/index.js'
