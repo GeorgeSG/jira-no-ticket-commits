@@ -9,7 +9,7 @@ Update the `ALLOWED_PROJECT_KEYS` array in `index.js`.
 
 - Use node `v12`
 - `npm i`
-- `npm build`.
+- `npm run build`.
 
 ## Use as a private action
 - Copy the `dist` file and the `action.yml` in the repo where the workflow should run.
