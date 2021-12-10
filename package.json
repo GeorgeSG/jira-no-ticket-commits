@@ -7,7 +7,6 @@
     "build": "ncc build index.js --minify",
     "watch": "ncc build index.js --watch --minify"
   },
-  "author": "Leanplum",
   "dependencies": {
     "@actions/core": "^1.6.0",
     "node-fetch": "^2.3.0"
